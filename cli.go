@@ -4,7 +4,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/araanbranco/simple-cli-go/services"
 	"github.com/urfave/cli"
 )
 
@@ -24,7 +23,6 @@ func main() {
 			Name:  "aws",
 			Usage: "commands for AWS",
 			Action: func(c *cli.Context) error {
-				services.ec2Service()
 				return nil
 			},
 		},
